@@ -14,16 +14,19 @@ Workforce Management is a easy to use command-line applicaion. It allows users t
 ## Installation
 
 1. Clone this repository:
+
    `git clone https://github.com/NatDavies06/Workforce-Management-12.git`
 
-2. Install depdencies using:
+3. Install depdencies using:
+
    `npm install`
 
-3. Set up you MySQL database using the 'schema.sql' file.
+5. Set up you MySQL database using the 'schema.sql' file.
    
-4. Update the conection object in index.js with your MySQL information.
+6. Update the conection object in index.js with your MySQL information.
 
-5. Finally fun the application using:
+7. Finally fun the application using:
+
    `npm start`
 
 ## Video Demo
