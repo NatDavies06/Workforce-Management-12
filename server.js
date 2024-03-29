@@ -1,12 +1,12 @@
 const inquirer = require('inquirer');
 const mysql = require('mysql2');
 
-// Create a connection to the MySQL database
+// Connection to the MySQL database
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'root', // Your MySQL username
-  password: 'yourpassword', // Your MySQL password
-  database: 'employee_db' // Your MySQL database name
+  user: 'root',
+  password: 'yourpassword', 
+  database: 'employee_db'
 });
 
 // Connect to the database
@@ -96,7 +96,7 @@ function viewEmployees() {
   });
 }
 
-// Function to add a new department
+// Function to add a department
 function addDepartment() {
   inquirer.prompt({
     name: 'name',
@@ -111,7 +111,7 @@ function addDepartment() {
   });
 }
 
-// Function to add a new role
+// Function to add a role
 function addRole() {
   connection.query('SELECT * FROM department', (err, departments) => {
     if (err) throw err;
@@ -146,7 +146,7 @@ function addRole() {
   });
 }
 
-// Function to add a new employee
+// Function to add an employee
 function addEmployee() {
   connection.query('SELECT * FROM role', (err, roles) => {
     if (err) throw err;
