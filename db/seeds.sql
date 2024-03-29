@@ -4,7 +4,7 @@ INSERT INTO
     department (name)
 VALUES
     ('Engineering'),
-    ('Finance'),
+    ('Finances'),
     ('Human Resources');
 
 -- Insert roles
@@ -21,3 +21,4 @@ INSERT INTO
 VALUES
     ('John', 'Doe', 1, NULL),
     ('Jane', 'Smith', 2, 3);
+    ('Nate', 'Davis', 3, 1);
