@@ -1,4 +1,8 @@
 -- Schema for employee tracker database
+DROP DATABASE IF EXIST employee_info_db;
+
+CREATE DATABASE employee_info_db;
+
 -- Department table
 CREATE TABLE department (
     id INT AUTO_INCREMENT PRIMARY KEY,
