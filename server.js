@@ -1,11 +1,14 @@
 const inquirer = require('inquirer');
 const mysql = require('mysql2');
 
+const PORT = process.env.PORT || 3001;
+const app = express();
+
 // Connection to the MySQL database
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'yourpassword', 
+  password: '', 
   database: 'employee_db'
 });
 
