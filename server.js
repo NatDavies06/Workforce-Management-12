@@ -5,6 +5,9 @@ const express = require('express');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+app.use(express.urlencoded({ extend: false }));
+app.use(express.json());
+
 // Connection to the MySQL database
 const connection = mysql.createConnection({
   host: 'localhost',
