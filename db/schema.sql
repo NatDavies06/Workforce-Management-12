@@ -1,5 +1,5 @@
 -- Schema for employee tracker database
-DROP DATABASE IF EXIST employee_info_db;
+DROP DATABASE IF EXIST employee_db;
 
 CREATE DATABASE employee_info_db;
 
